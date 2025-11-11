@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         kebabreadyv3-inline-top
-// @namespace    https://github.com/Mies/studenta-analyzer
+// @namespace    
 // @version      3.0
 // @description  Minimalistic stoic UI embedded above table, highlights, >10% popup, credit link "KebabMies".
 // @author       KebabMies
@@ -55,7 +55,7 @@
             <div id="lessonStats" style="font-size:13px;line-height:1.4;">Valitse oppiaine nähdäksesi tiedot</div>
             <div id="lessonDates" style="margin-top:8px;font-size:12px;max-height:180px;overflow:auto;"></div>
             <div style="margin-top:10px;font-size:10px;color:#888;">
-              Made by <a href="https://github.com/Mies" target="_blank" style="color:#888;text-decoration:none;">KebabMies</a>
+              Made by <a href="fuckyoujp" target="_blank" style="color:#888;text-decoration:none;">KebabMies</a>
             </div>
         `;
 
