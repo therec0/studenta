@@ -24,11 +24,12 @@
     toggleBtn.style.userSelect = 'none';
     document.body.appendChild(toggleBtn);
 
-    // Panel placeholder
-    let panel;
+    // --- Panel placeholder created immediately ---
+    let panel = document.createElement('div');
+    panel.style.display = 'none'; // hidden by default
+    document.body.appendChild(panel);
 
     toggleBtn.addEventListener('click', () => {
-        if (!panel) return;
         panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
     });
 
@@ -54,10 +55,8 @@
         const highlightAbsence = 'rgba(200, 50, 50, 0.2)';
         const highlightPresent = 'rgba(50, 200, 50, 0.15)';
 
-        // --- Create panel ---
-        panel = document.createElement('div');
+        // --- Populate panel with content ---
         panel.id = 'studentaAnalyzer';
-        panel.style.display = 'none'; // hidden initially
         panel.style.position = 'fixed';
         panel.style.bottom = '20px';
         panel.style.right = '60px'; // leave space for emoji
@@ -80,7 +79,6 @@
             </div>
         </div>
         `;
-        document.body.appendChild(panel);
 
         const select = panel.querySelector('#lessonSelect');
         const refreshBtn = panel.querySelector('#refreshBtn');
